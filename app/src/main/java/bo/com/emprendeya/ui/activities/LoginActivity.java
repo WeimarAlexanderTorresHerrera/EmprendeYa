@@ -8,6 +8,8 @@ import android.util.Log;
 import android.view.View;
 
 import bo.com.emprendeya.R;
+import bo.com.emprendeya.model.Base;
+import bo.com.emprendeya.model.users.User;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -24,6 +26,11 @@ public class LoginActivity extends AppCompatActivity {
         // Repository.login();
 
         // Repository.getInstance().login();
+
+        User user = new User("alexandertorreshe@gmail.com", "123456");
+        Base baseUser = new Base(user);
+        Log.e(LOG + ".baseUser.success", "" + baseUser.isSuccess());
+        Log.e(LOG + ".baseUser.email", "" + ((User) baseUser.getData()).getEmail());
     }
 
     @Override
