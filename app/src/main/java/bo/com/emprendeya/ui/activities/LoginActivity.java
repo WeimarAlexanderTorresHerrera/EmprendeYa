@@ -23,7 +23,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Log.e(LOG, "onCreate");
 
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
         // Repository repository = new Repository();
         // Repository.login();
