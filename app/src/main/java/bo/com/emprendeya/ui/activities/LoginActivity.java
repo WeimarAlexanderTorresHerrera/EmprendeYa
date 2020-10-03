@@ -25,6 +25,9 @@ public class LoginActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_login);
 
+        //Ocultar el ActionBar
+        getSupportActionBar().hide();
+
         // Repository repository = new Repository();
         // Repository.login();
 
